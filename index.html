@@ -20,21 +20,26 @@
 body, html {
   font-family: 'Nanum Barun Gothic', sans-serif;
   font-weight: 200;
+  color: #626262;
   overflow-x: hidden;
+  line-height: 30px
 }
 
-.container-fluid {
-	margin: 0px;
-	padding: 0px;
-}
+p {margin: 40px 0px 40px 0px;}
 
-.row {
-	margin-bottom: 10px;
-}
+.container-fluid {margin: 0px; padding: 0px}
+.row {margin-bottom: 10px}
 
-.sh-intro > .sh-intro-body > p {font-size: 16px;}
-.sh-intro > .sh-intro-body > .parent {margin-bottom: 40px;}
-.sh-where-details { margin: 0px 20px 0px 20px;}
+.sh-intro > .sh-intro-body > p {word-spacing: 3px}
+.sh-intro > .sh-intro-body > .introduce {font-size: 16px}
+.sh-intro > .sh-intro-body > .family-name {font-weight: 400; font-size: 18px}
+
+.sh-where > .sh-where-details > p {word-spacing: 3px}
+.sh-where > .sh-where-details > .address {font-weight: 400; font-size: 18px}
+.sh-where > .sh-where-details > .direction {font-size: 16px; margin: 0px 20px 0px 20px;}
+.sh-where > .sh-where-details > .direction > dd {margin-bottom: 20px;}
+
+
 </style>
 </head>
 <body>
@@ -54,7 +59,7 @@ body, html {
 	<div class="row sh-intro">
 		<!-- 알림 -->
 		<div class="col-md-6 col-md-offset-3 sh-intro-body">
-			<p class="text-center">
+			<p class="text-center introduce">
 				따뜻한 두 손을 꼬옥 잡고<br/>
 				함께 기댈 언덕이 되어<br/>
 				서로의 쉴만한 물가가 되어<br/>
@@ -67,9 +72,9 @@ body, html {
 				아름다운 2월의 결혼식에<br/>
 				늘 아껴주셨던 고마운 분들을 모십니다.<br/>
 			</p>
-			<p class="parent">
-				<h4 class="text-center">최의용 유재숙 <small>의 든든한 아들</small> 상호</h4>
-				<h4 class="text-center">정효근 노정숙 <small>의 따뜻한 딸</small> 혜경</h4>
+			<p class="text-center family-name">
+				최의용 유재숙 <small>의 든든한 첫째 아들</small> 상호<br/>
+				정효근 노정숙 <small>의 따뜻한 첫째  딸</small> 혜경</h4>
 			</p>
 		</div>
 	</div>
@@ -78,39 +83,41 @@ body, html {
 		<div class="col-md-6 col-md-offset-3">
 			<div id="animated-thumbnials">
 				<a href="img/01.jpg">
-					<img src="img/01.jpg" />
+					<img src="img/thumb_01.jpg" />
 				</a>
 				<a href="img/02.jpg">
-					<img src="img/02.jpg" />
+					<img src="img/thumb_02.jpg" />
 				</a>
 				<a href="img/03.jpg">
-					<img src="img/03.jpg" />
+					<img src="img/thumb_03.jpg" />
 				</a>
 				<a href="img/04.jpg">
-					<img src="img/04.jpg" />
+					<img src="img/thumb_04.jpg" />
 				</a>
 				<a href="img/05.jpg">
-					<img src="img/05.jpg" />
+					<img src="img/thumb_05.jpg" />
 				</a>
 				<a href="img/06.jpg">
-					<img src="img/06.jpg" />
+					<img src="img/thumb_06.jpg" />
 				</a>
 			</div>
 		</div>
 	</div>
 	<div class="row sh-where">
 		<!-- 오시는 길 -->
-		<div class="col-md-6 col-md-offset-3">
-			<div class="sh-where-details">
-				<h4 class="text-center">서울시 강남구 논현로 742 (논현동 66-24번지)</h4>
-				<h5 class="text-center">파티오나인 TEL: 02) 517-7070</h5>
-				<dl class="dl-horizontal">
-		  			<dt>지하철</dt>
-		  			<dd>7호선 학동역 8번출구에서 을지병원 방향으로 300m<br/>(8번 출구에서 파티오나인 셔틀버스 운행</dd>
-		  			<dt>버스</dt>
-		  			<dd>강남을지병원 하차<br/>간선버스: 147, 240, 463<br/>지선버스: 4211<br/>마을버스: 강남 08</dd>
-				</dl>
-			</div>
+		<div class="col-md-6 col-md-offset-3 sh-where-details">
+			<p class="text-center address">
+				서울시 강남구 논현로 742<br/>(논현동 66-24번지)<br/>
+				<small>파티오나인 TEL: 02) 517-7070</small>
+			</p>
+				
+			<dl class="dl-horizontal direction">
+	  			<dt>지하철</dt>
+	  			<dd>7호선 학동역 8번출구에서 을지병원 방향으로 300m<br/>(8번 출구에서 파티오나인 셔틀버스 운행</dd>
+	  			<dt>버스</dt>
+	  			<dd>강남을지병원 하차<br/>간선버스: 147, 240, 463<br/>지선버스: 4211<br/>마을버스: 강남 08</dd>
+			</dl>
+			
 		</div>
 	</div>
 	<div class="row">
@@ -136,10 +143,13 @@ body, html {
 <script>
 
 $("#animated-thumbnials").lightGallery({
-    thumbnail:true
+    thumbnail: true,
+    thumbWidth: 120,
+    thumbContHeight: 100
+
 }); 
 $("#animated-thumbnials").justifiedGallery({
-	lastRow:"justify"
+	lastRow: "justify"
 });
 </script>
 </body>
