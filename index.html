@@ -1,1 +1,127 @@
-Hello World
+<html>
+<head>
+<title>굥과 곰의 결혼식에 늘 아껴주셨던 고마운 분들을 모십니다.</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.9/css/lightgallery.min.css" /> 
+
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.0/css/justifiedGallery.min.css" /> 
+
+<link href='font/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+
+<style>
+body {
+  font-family: 'Nanum Barun Gothic', sans-serif;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+	margin: 0px;
+	padding: 0px;
+}
+
+.row {
+	margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row sh-cover">
+		<!-- 커버 이미지 -->
+		<div class="col-md-6 col-md-offset-3">
+			<img src="img/cover.jpg" width="100%">
+		</div>
+	</div>
+	<div class="row">
+		<!-- 알림 -->
+		<div class="col-md-6 col-md-offset-3">
+			<p class="text-center">
+				따뜻한 두 손을 꼬옥 잡고<br/>
+				함께 기댈 언덕이 되어<br/>
+				서로의 쉴만한 물가가 되어<br/>
+				더 깊어져 가겠습니다.<br/>
+				<br/>
+				겨울의 끝을 알리는 바람과<br/>
+				봄의 따스함이 가져온 햇살에<br/>
+				기분이 좋아지는 2월,<br/>
+				<br/>
+				아름다운 2월의 결혼식에<br/>
+				늘 아껴주셨던 고마운 분들을 모십니다.<br/>
+			</p>
+			<div>
+				<h3 class="text-center">최의용 유재숙 <small>의 든든한 아들</small> 상호</h3>
+				<h3 class="text-center">정효근 노정숙 <small>의 따뜻한 딸</small> 혜경</h3>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<!-- 사진 -->
+		<div class="col-md-6 col-md-offset-3">
+			<div id="animated-thumbnials">
+				<a href="img/cover.jpg">
+					<img src="img/cover.jpg" />
+				</a>
+				<a href="img/cover.jpg">
+					<img src="img/cover.jpg" />
+				</a>
+				<a href="img/cover.jpg">
+					<img src="img/cover.jpg" />
+				</a>
+				<a href="img/cover.jpg">
+					<img src="img/cover.jpg" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<!-- 오시는 길 -->
+		<div class="col-md-6 col-md-offset-3">
+			<h3 class="text-center">서울시 강남구 논현로 742 (논현동 66-24번지)</h3>
+			<h4 class="text-center">파티오나인 TEL: 02) 517-7070</h4>
+			<dl class="dl-horizontal">
+	  			<dt>지하철</dt>
+	  			<dd>7호선 학동역 8번출구에서 을지병원 방향으로 300m<br/>(8번 출구에서 파티오나인 셔틀버스 운행</dd>
+	  			<dt>버스</dt>
+	  			<dd>강남을지병원 하차<br/>간선버스: 147, 240, 463<br/>지선버스: 4211<br/>마을버스: 강남 08</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="row">
+		<!-- 마무리 -->
+		<div class="col-md-6 col-md-offset-3">
+			<blockquote class="blockquote-reverse">
+  				<footer>화환은 정중히 사양합니다.</footer>
+  				<footer>지구를 사랑하는 마음으로 대중교통을 이용해 주세요.</footer>
+			</blockquote>
+
+		</div>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.9/js/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.9/js/lg-fullscreen.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.9/js/lg-thumbnail.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.0/js/jquery.justifiedGallery.min.js"></script>
+
+<script>
+
+$("#animated-thumbnials").lightGallery({
+    thumbnail:true
+}); 
+$("#animated-thumbnials").justifiedGallery({
+	lastRow:"justify"
+});
+</script>
+</body>
+</html>
