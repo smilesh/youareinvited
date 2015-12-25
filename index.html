@@ -30,16 +30,18 @@ p {margin: 40px 0px 40px 0px;}
 .container-fluid {margin: 0px; padding: 0px}
 .row {margin-bottom: 10px}
 
+.no-wrap {white-space: nowrap}
+
 .sh-intro > .sh-intro-body > p {word-spacing: 3px}
 .sh-intro > .sh-intro-body > .introduce {font-size: 16px}
 .sh-intro > .sh-intro-body > .family-name {font-weight: 400; font-size: 18px}
 
+.sh-where > .sh-where-details {margin-bottom: 40px}
 .sh-where > .sh-where-details > p {word-spacing: 3px}
 .sh-where > .sh-where-details > .address {font-weight: 400; font-size: 18px}
-.sh-where > .sh-where-details > .direction {font-size: 16px; margin: 0px 20px 20px 20px;}
-.sh-where > .sh-where-details > .map {margin: 0px 0px 20px 0px}
 .sh-where > .sh-where-details > .map > table {margin: 0 auto;}
-.sh-where > .sh-where-details > .direction > dd {margin-bottom: 20px;}
+.sh-where > .sh-where-direction > dl {font-size: 16px; margin: 0px 20px 0px 20px;}
+.sh-where > .sh-where-direction > dl > dd {margin-bottom: 20px;}
 
 </style>
 </head>
@@ -104,19 +106,20 @@ p {margin: 40px 0px 40px 0px;}
 		<!-- 오시는 길 -->
 		<div class="col-md-6 col-md-offset-3 sh-where-details">
 			<p class="text-center address">
-				서울시 강남구 논현로 742<br/>(논현동 66-24번지)<br/>
-				<small>파티오나인 TEL: 02) 517-7070</small>
+				<span class="no-wrap">서울시 강남구 논현로 742</span> <span class="no-wrap">(논현동 66-24번지)</span><br/>파티오나인<br/>
+				<small>TEL: 02) 517-7070</small>
 			</p>
 			<div class="map">
 				<table cellpadding="0" cellspacing="0" width="502"> <tr> <td style="border:1px solid #cecece;"><a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5170169&lng=127.0299324&dlevel=11&searchCoord=126.9979921%3B37.4989304&query=7YyM7Yuw7Jik64KY7J247Juo65Sp&mpx=09650581%3A37.4989304%2C126.9979921%3AZ12%3A0.0144930%2C0.0068879&tab=1&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1451055979020_1522381753" width="500" height="400" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr> <tr> <td>  <table cellpadding="0" cellspacing="0" width="100%">  <tr>  <td height="30" bgcolor="#f9f9f9" align="left" style="padding-left:9px; border-left:1px solid #cecece; border-bottom:1px solid #cecece;">   <span style="font-family: tahoma; font-size: 11px; color:#666;">2015.12.26</span>&nbsp;<span style="font-size: 11px; color:#e5e5e5;">|</span>&nbsp;<a style="font-family: dotum,sans-serif; font-size: 11px; color:#666; text-decoration: none; letter-spacing: -1px;" href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5170169&lng=127.0299324&dlevel=11&searchCoord=126.9979921%3B37.4989304&query=7YyM7Yuw7Jik64KY7J247Juo65Sp&mpx=09650581%3A37.4989304%2C126.9979921%3AZ12%3A0.0144930%2C0.0068879&tab=1&enc=b64" target="_blank">지도 크게 보기</a>  </td>  <td width="98" bgcolor="#f9f9f9" align="right" style="text-align:right; padding-right:9px; border-right:1px solid #cecece; border-bottom:1px solid #cecece;">   <span style="float:right;"><span style="font-size:9px; font-family:Verdana, sans-serif; color:#444;">&copy;&nbsp;</span>&nbsp;<a style="font-family:tahoma; font-size:9px; font-weight:bold; color:#2db400; text-decoration:none;" href="http://www.nhncorp.com" target="_blank">NAVER Corp.</a></span>  </td>  </tr>  </table> </td> </tr>  </table>
 			</div>
-			<dl class="dl-horizontal direction">
+		</div>
+		<div class="col-md-6 col-md-offset-3 sh-where-direction">
+			<dl>
 	  			<dt>지하철</dt>
 	  			<dd>7호선 학동역 8번출구에서 을지병원 방향으로 300m<br/>(8번 출구에서 파티오나인 셔틀버스 운행)</dd>
 	  			<dt>버스</dt>
 	  			<dd>강남을지병원 하차<br/>간선버스: 147, 240, 463<br/>지선버스: 4211<br/>마을버스: 강남 08</dd>
 			</dl>
-			
 		</div>
 	</div>
 	<div class="row">
